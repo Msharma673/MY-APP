@@ -1,0 +1,24 @@
+.category-section  .section-subtitle {
+  color: var(--radical-red);
+}
+
+.category-section  .section-title {
+  --color: var(--kappel);
+}
+.category-section  .section-title span
+{
+  color: #EE4962;
+}
+
+.category-section  .section-text {
+  margin-block-end: 40px;
+}
+.tab-item
+{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-block-end: 10px;
+    margin-top: 60px;
+    gap: 15px;
+
+}

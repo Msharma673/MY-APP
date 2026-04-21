@@ -1,0 +1,265 @@
+.teach-section
+{
+  background-color: #e6f0fa;
+  padding-inline: 2em;
+  
+}
+.teach-container {
+  display: none;
+  justify-content:space-evenly;
+  align-items: center;
+  padding-inline: 2em;
+}
+
+.teach-content {
+  max-width: 50%;
+}
+.teach-with-us-mobile-container > p{
+
+  text-align: center;
+  margin-block: 1.2em;
+
+}
+.teach-content h2 {
+  font-size: 2em;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.teach-content p {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.teach-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.teach-content ul li {
+  font-size: 16px;
+  color: #4b5563;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.teach-content ul li::before {
+  content: '✓';
+  color: #4b5563;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.teach-with-us-mobile-container ul li::before{
+  content: '✓';
+  color: #4b5563;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.teach-with-us-mobile-container ul li{
+  margin-bottom: 1em;
+}
+.join-button {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.teach-with-us-mobile-container > .join-button{
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 60%;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 2em;
+}
+
+.teach-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.teach-with-us-mobile-container > .teach-image 
+{
+  margin-bottom: 1.5em;
+}
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 575px) {
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /**
+     * COURSE EXPLORER
+     */
+}
+
+/**
+   * responsive for large than 768px screen
+   */
+
+@media (min-width: 768px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 4.6rem;
+    --fs-2: 3.8rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+     * COURSE EXPLORER
+     */
+}
+
+@media (min-width: 992px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  html {
+    /**
+       * typography
+       */
+
+    --fs-1: 5.5rem;
+    --fs-2: 4.5rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /**
+     * TEACH WITH US
+     */
+
+     .teach-container{
+      display: flex;
+     } 
+     .teach-with-us-mobile-container{
+      display: none;
+     }
+     .teach-image img {
+      width: 530px;
+      border-radius: 10px;
+    }
+    
+}
+
+/**
+   * responsive for large than 1200px screen
+   */
+
+@media (min-width: 1200px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 6.5rem;
+
+    /**
+       * spacing
+       */
+
+    --section-padding: 120px;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 1185px;
+  }
+
+  .about-content,
+  .video-card,
+  .blog {
+    position: relative;
+  }
+
+  /**
+     * TEACH WITH US
+     */
+
+ 
+     .teach-container{
+      display: flex;
+     } 
+     .teach-with-us-mobile-container{
+      display: none;
+     }
+     .teach-image img {
+      width: 530px;
+      border-radius: 10px;
+    }
+    
+}

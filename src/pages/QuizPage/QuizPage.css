@@ -1,0 +1,214 @@
+
+  
+  /* .QuizTest {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } */
+  
+  .navbar, .footer {
+    flex-shrink: 0;
+  }
+  
+  .Quiz {
+    background-color: #252d4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    animation: fadeIn 0.5s ease-in-out;
+    max-width: 800px;
+    margin: 20px auto;
+    min-height: 100vh;
+  }
+  
+  .button, .startButton {
+    background: rgb(131, 5, 189);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover, .startButton:hover {
+    background: rgb(101, 4, 146);
+  }
+  
+  .startBox, .endBox {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .timeInput {
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .timeInput::-webkit-inner-spin-button, 
+  .timeInput::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  .questionBox {
+    position: relative;
+    height: 100%;
+    color: white;
+  }
+  
+  .questionHead {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .middleBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .question p {
+    font-size: 20px;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  
+  .option .text {
+    width: 80%;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid #234668;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .option .text:hover, .selected {
+    background: #234668;
+  }
+  
+  .questionBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .nextBtn {
+    float: right;
+  }
+  
+  .trophy {
+    height: 50px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-main {
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    color: black;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  
+  .modalBody {
+    text-align: left;
+  }
+  
+  .modalBody header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .bg-success, .bg-warning, .bg-danger {
+    padding: 10px;
+    width: 90%;
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .bg-success {
+    background: #48c774;
+  }
+  
+  .bg-warning {
+    background: #3273dc;
+  }
+  
+  .bg-danger {
+    background: #f14668;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .Quiz {
+      width: 90vw;
+      padding: 15px;
+    }
+  
+    .modal-main {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Quiz {
+      width: 95vw;
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,247 @@
+/* HeroSection Component Styles */
+
+.hero_section {
+    position: relative;
+    display: flex;
+    margin: 120px 24px 80px;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 400px;
+}
+
+.left_hs {
+    padding-top: 300px;
+    height: 238px;
+    opacity: 0;
+    transition: all 0.5s ease-out 0.5s;
+    border-bottom-right-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    top: 26%;
+}
+
+.left_hs * {
+    text-align: center;
+}
+
+.h1_hs {
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 60px;
+}
+
+.swiper_div_hs {
+    height: 70px;
+}
+
+.swiper_hs {
+    width: fit-content;
+    height: 70px;
+    margin: auto;
+}
+
+.swiper-slide {
+    /* Add specific styles for swiper-slide if needed */
+}
+
+.swiper_hs .h1_slide_title_hs {
+    color: #81b9e8;
+    font-size: 3.5em;
+    line-height: 70px;
+    white-space: nowrap;
+    margin: 0 16px;
+    transition: all 0.8s ease;
+    opacity: 0 !important;
+}
+
+body .swiper_hs .swiper-slide-active .h1_slide_title_hs {
+    opacity: 1 !important;
+}
+
+.div_slide_video_hs {
+    margin-bottom: -60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0);
+    border-radius: 32px;
+}
+
+div_slide_video_hs video {
+    height: calc(100vh - 160px);
+    border-radius: 32px;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.3s ease-out;
+}
+
+#play_btn {
+    position: absolute;
+    font-size: 48px;
+    color: #b7deff;
+}
+
+.scroll_playing #play_btn {
+    bottom: 8px;
+    left: 32px;
+}
+
+.scroll_playing .div_slide_video_hs video {
+    opacity: 1;
+}
+
+.onload_anime .right_hs {
+    transition: all 0.5s ease-out 0.5s;
+    opacity: 1;
+}
+
+.onload_anime .left_hs {
+    padding-top: 0px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 920px) {
+    .left_hs {
+        top: 20%;
+    }
+
+    .h1_hs {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .swiper_div_hs,
+    .swiper_hs {
+        height: 48px;
+    }
+
+    .swiper_hs .h1_slide_title_hs {
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .div_slide_video_hs {
+        margin-bottom: -60px;
+    }
+
+    .div_slide_video_hs video {
+        height: 580px;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .swiper_hs .h1_slide_title_hs {
+        white-space: normal;
+    }
+
+    .h1_hs {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .swiper_div_hs,
+    .swiper_hs {
+        height: 90px;
+    }
+
+    .div_slide_video_hs video {
+        height: 580px;
+    }
+}
+
+
+.hero_section {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .left_hs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .h1_hs {
+    margin-bottom: 20px;
+  }
+  
+  .swiper_div_hs {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .slides_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .h1_slide_title_hs {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .ptag_hs {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .right_hs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .slide_video_hs {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-banner {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .info_item_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-item {
+    margin: 10px 0;
+  }
+  
+  .divider {
+    margin: 10px 0;
+  }
+  
+  

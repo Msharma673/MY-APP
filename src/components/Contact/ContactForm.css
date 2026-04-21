@@ -1,0 +1,306 @@
+.contact-section {
+  padding-block-end: var(--section-padding);
+  background-color: var(--white);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.contact-image {
+  display: none;
+  width: 400px;
+}
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-5);
+  box-shadow: var(--shadow-1);
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 450px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.contact-form .form-group input {
+  border-radius: 10px;
+  border-color: rgb(42, 42, 106);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: var(--fs-5);
+  color: var(--eerie-black-1);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-3);
+  font-size: var(--fs-5);
+  color: var(--eerie-black-2);
+}
+
+/* .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  } */
+
+.btn1 {
+  display: inline-block;
+  padding: 4px 50px;
+  background-color: rgb(42, 42, 106);
+  color: var(--white);
+  font-family: var(--ff-league_spartan);
+  font-size: var(--fs-5);
+  border-radius: var(--radius-5);
+  cursor: pointer;
+  transition: var(--transition-1);
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.btn:hover {
+  background-image: var(--gradient);
+}
+
+.contact-title h2 span {
+  color: #f59e0b;
+}
+
+.contact-title h2 {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 35px;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 575px) {
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /**
+     * COURSE EXPLORER
+     */
+}
+
+/**
+   * responsive for large than 768px screen
+   */
+
+@media (min-width: 768px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 4.6rem;
+    --fs-2: 3.8rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+     * COURSE EXPLORER
+     */
+}
+
+@media (min-width: 992px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  html {
+    /**
+       * typography
+       */
+
+    --fs-1: 5.5rem;
+    --fs-2: 4.5rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /**
+     * CONTACT US
+     */
+
+  .contact-image {
+    display: block;
+  }
+  .btn1 {
+    width: unset;
+    margin-left: 0;
+  }
+}
+
+/**
+   * responsive for large than 1200px screen
+   */
+
+@media (min-width: 1200px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 6.5rem;
+
+    /**
+       * spacing
+       */
+
+    --section-padding: 120px;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 1185px;
+  }
+
+  .about-content,
+  .video-card,
+  .blog {
+    position: relative;
+  }
+
+  /**
+     * CONTACT US
+     */
+
+  .contact-image {
+    display: block;
+  }
+  .btn1 {
+    width: unset;
+    margin-left: 0;
+  }
+}
+
+/* SweetAlertCustom.css */
+.responsive-swal-popup {
+  max-width: 500px; 
+  width: 90%; 
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .responsive-swal-popup {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-swal-popup {
+    font-size: 0.9em; 
+  }
+}
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group-grouped {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group-grouped .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .form-group-grouped {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group-grouped .form-group {
+    width: 48%;
+  }
+}

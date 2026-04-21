@@ -1,0 +1,142 @@
+
+  
+  .container1 {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    /* width: 100%; */
+    height: 100%;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    padding-left: 50px;
+  }
+  
+  .image-section img {
+    width: 80%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .logo1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .role-toggle {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .role-toggle button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .role-toggle button.active {
+    background-color: #09294b;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    border: none;
+    background-color: #09294b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  .link {
+    color: #09294b;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+    .container1 {
+      flex-direction: column;
+      max-width: 600px;
+    }
+  
+    .image-section {
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+      padding-left: 0;
+    }
+  
+    .form-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container1 {
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+    }
+    h2 {
+        padding-top: 2rem;
+    }
+  
+    .image-section {
+      display: none;
+    }
+  
+    .form-section {
+      padding: 20px;
+      width: 100%;
+    }
+    .logo1 {
+        display: none;
+    }
+  }
+  

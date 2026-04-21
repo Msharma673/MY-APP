@@ -1,0 +1,78 @@
+.quicklinks-container {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e9f3ff);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 6%;
+  }
+  
+  .quicklinks-title {
+    font-size: 2.5rem;
+    color: #062784;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quicklinks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .quicklink-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #062784;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .quicklink-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #e89f3e, #f2d1a4);
+    color: white;
+  }
+  
+  .quicklink-icon {
+    font-size: 3rem;
+    color: #e89f3e;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .quicklink-card:hover .quicklink-icon {
+    transform: scale(1.2);
+    color: white;
+  }
+  
+  .quicklink-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quicklink-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .quicklink-card:hover .quicklink-title {
+    color: white;
+  }
+  
+  .quicklink-card:hover .quicklink-description {
+    color: white;
+  }
+  

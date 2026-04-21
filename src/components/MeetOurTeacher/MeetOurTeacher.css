@@ -1,0 +1,223 @@
+/* Overall container */
+.meet-our-teacher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#fff;
+    height: 400px;
+    width: 100%;
+    animation: fadeInComponent 1s forwards;
+  }
+  
+  @keyframes fadeInComponent {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Left panel */
+  .left-panel {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+  }
+  
+  .initial-content {
+    text-align: left;
+  }
+  
+  .heading {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #062784;
+  }
+  
+  .heading .teacher {
+    color: #E89F3E;
+    display: inline;
+  }
+  
+  .quote {
+    margin: 0;
+    font-size: 2em;
+    color: #666;
+    font-weight: bold;
+  }
+  
+  .teacher-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+  
+  
+  .teacher-pic {
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #E89F3E;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .teacher-name {
+    font-size: 1.8em;
+    color: #062784;
+    font-weight: bold;
+    margin: 0;
+
+  }
+  
+  .qualification {
+    font-size: 1.1em;
+    color: #E89F3E;
+    margin: 0;
+    /* margin-top: 5px; */
+  }
+  
+  .back-icon {
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Right panel styling */
+  .right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .teacher-bubbles {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 90%;
+    transition: transform 0.5s ease;
+  }
+  
+  .teacher-bubble {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    animation: float 5s ease-in-out infinite alternate;
+  }
+  
+  .teacher-bubble:hover {
+    transform: scale(1.1);
+  }
+  
+  .teacher-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+  
+  @keyframes float {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Tablet view (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .meet-our-teacher {
+      flex-direction: column;
+      padding: 15px;
+    }
+    .left-panel,
+    .right-panel {
+      flex: 1;
+      border-right: none;
+      padding: 15px;
+    }
+    .heading {
+      font-size: 2em;
+    }
+    .quote {
+      font-size: 1.5em;
+    }
+    .teacher-details .teacher-pic {
+      width: 150px;
+      height: 200px;
+    }
+    .teacher-bubbles {
+      flex-direction: row;
+      gap: 0.8rem;
+    }
+    .teacher-bubble {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  /* Mobile view (max-width: 768px) */
+  @media (max-width: 768px) {
+    .meet-our-teacher {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .left-panel,
+    .right-panel {
+      flex: 1;
+      border-right: none;
+      padding: 10px;
+      text-align: center;
+    }
+    .heading {
+      font-size: 1.8em;
+    }
+    .quote {
+      font-size: 1.2em;
+    }
+    .teacher-details .teacher-pic {
+      width: 120px;
+      height: 160px;
+    }
+    .teacher-bubbles {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+    .teacher-bubble {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

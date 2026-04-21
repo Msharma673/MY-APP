@@ -1,0 +1,80 @@
+.course-review-section
+{
+    width: 90%;
+}
+.course-review-container{
+    width: 100%;
+}
+.course-review-avg-rating-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+    background-color:#EBF5FF;
+    border-radius: 20px;
+}
+.course-review-avg-rating-star{
+    width: 30%;
+    margin-top: 10%;
+}
+.course-review-avg-rating-star > h2{
+    color: black;
+}
+.icon-star{
+    display: flex;
+    gap: 2px;
+    color: var(--selective-yellow);
+}
+.progress-bar{
+    width: 300px ;
+    height: 5px;
+    background: linear-gradient(to right, #86D1D6 60%, lightgray 60%);
+    margin-top: 3%;
+    border-radius: 30px;
+}
+.stars{
+    display: flex;
+    gap: 8px;
+    margin-top: 1em;
+}
+.stars > p{
+    margin-top: 0;
+}
+.course-review-testimonial-container{
+    width: 100%;
+}
+.review{
+    margin-top: 2em;
+}
+.review-author-timeline-container{
+    display: flex;
+    justify-content: space-between;
+}
+.review-author-container{
+    display: flex;
+    gap: 5px;
+}
+.review-author-container > h4
+{
+    margin: 0;
+    padding: 0.5em;
+    color: black;
+}
+.review-author-image{
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px){
+    .course-review-section{
+        width: 100%;
+    }
+    .course-review-avg-rating-container{
+        flex-direction: column;
+    }
+    .course-review-avg-rating-star{
+        width: 100%;
+    }
+}

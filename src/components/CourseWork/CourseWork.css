@@ -1,0 +1,18 @@
+.coursework-section{
+    width: 90%;
+}
+.coursework-container{
+    width: 100%;
+}
+.unit{
+    margin-bottom: 2em;
+}
+.unit > h2{
+    color:#0961A2;
+}
+.unit > ul{
+    padding-left: 2em;
+}
+.unit > ul > li{
+    list-style: disc;
+}

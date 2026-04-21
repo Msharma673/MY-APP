@@ -1,0 +1,24 @@
+html
+{
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+}
+
+/* src/App.css */
+
+/* .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff; 
+} */
+
+.loader{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff; 
+}
+

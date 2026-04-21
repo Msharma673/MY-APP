@@ -1,0 +1,228 @@
+.sidebar {
+    width: 100%;   
+}
+
+.major-item {
+    margin-bottom: 10px;
+}
+
+.major-title {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #0961A2;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.major-title:hover {
+    color: #54a7ff;
+}
+
+
+
+.major-description {
+    padding: 10px;
+}
+
+.major-item.expanded .major-description {
+    display: block;
+}
+
+.course-cards {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 575px) {
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 520px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  
+    .grid-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    :is(.course, .blog) .grid-list {
+      grid-template-columns: 1fr;
+    }
+  
+    /**
+     * SIDEBAR
+     */
+
+  
+   
+  }
+  
+  /**
+   * responsive for large than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+      /**
+       * typography
+       */
+  
+      --fs-1: 4.6rem;
+      --fs-2: 3.8rem;
+    }
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 720px;
+    }
+  
+    .btn {
+      padding: 15px 30px;
+    }
+  
+    :is(.course, .blog) .grid-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /**
+     * SIDEBAR
+     */
+  
+    
+  }
+  
+  @media (min-width: 992px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    html {
+      /**
+       * typography
+       */
+  
+      --fs-1: 5.5rem;
+      --fs-2: 4.5rem;
+    }
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 960px;
+    }
+  
+    .grid-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    :is(.course, .blog) .grid-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    /**
+     * SIDEBAR
+     */
+
+     .sidebar {
+        width: 250px;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    /* .major-description {
+        margin-top: 10px;
+        padding-left: 10px;
+        color: #555;
+    } */
+
+    .course-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+  
+    
+  }
+  
+  /**
+   * responsive for large than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+      /**
+       * typography
+       */
+  
+      --fs-1: 6.5rem;
+  
+      /**
+       * spacing
+       */
+  
+      --section-padding: 120px;
+    }
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 1185px;
+    }
+  
+    .shape {
+      display: block;
+    }
+  
+    .about-content,
+    .video-card,
+    .blog {
+      position: relative;
+    }
+  
+   
+    /**
+     * SIDEBAR
+     */
+  
+     .sidebar {
+        width: 250px;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    /* .major-description {
+        margin-top: 10px;
+        padding-left: 10px;
+        color: #555;
+    } */
+
+    .course-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+  }

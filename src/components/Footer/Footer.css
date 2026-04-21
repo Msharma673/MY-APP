@@ -1,0 +1,317 @@
+/* Footer.css */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #e8e8e8;
+}
+
+.footer-subscribe {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #140707;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 180px;
+}
+
+.footer-column1 p {
+  font-size: 13px;
+  color: #161515;
+  padding-bottom: 4px;
+}
+
+.footer-column1 .English select {
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+  color: #161515;
+}
+
+.footer-column a {
+  margin: 5px 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 2em;
+  /* margin-bottom: 10px; */
+  color: #000;
+  flex-wrap: wrap-reverse;
+}
+
+.footer-bottom > p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-legal a {
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
+
+.footer-subscribe-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-subscribe-input input[type="email"] {
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-subscribe-input button {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  cursor: pointer;
+}
+
+.footer-social i {
+  font-size: 18px;
+  color: #333;
+}
+
+.facebook i {
+  color: #1877f2;
+}
+
+.twitter i {
+  color: #1da1f2;
+}
+
+.instagram i {
+  color: #e4405f;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 575px) {
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /**
+     * COURSE EXPLORER
+     */
+}
+
+/**
+   * responsive for large than 768px screen
+   */
+
+@media (min-width: 768px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 4.6rem;
+    --fs-2: 3.8rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+     * FOOTER
+     */
+  .footer-bottom > p {
+    display: block;
+    width: 10%;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  html {
+    /**
+       * typography
+       */
+
+    --fs-1: 5.5rem;
+    --fs-2: 4.5rem;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /**
+     * FOOTER
+     */
+  .footer-bottom > p {
+    display: block;
+    width: 10%;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+
+/**
+   * responsive for large than 1200px screen
+   */
+
+@media (min-width: 1200px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 6.5rem;
+
+    /**
+       * spacing
+       */
+
+    --section-padding: 120px;
+  }
+
+  /**
+     * REUSED STYLE
+     */
+
+  .container {
+    max-width: 1185px;
+  }
+
+  .about-content,
+  .video-card,
+  .blog {
+    position: relative;
+  }
+
+  /**
+     * FOOTER
+     */
+  .footer-bottom > p {
+    display: block;
+    width: 10%;
+    text-align: left;
+    padding-top: 0;
+  }
+}

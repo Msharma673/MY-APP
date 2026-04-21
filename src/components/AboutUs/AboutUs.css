@@ -1,0 +1,231 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 50vh;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(23, 49, 242, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.banner-text .banner-text1 {
+  width: 70%;
+  text-align: left;
+  padding: 2em;
+}
+
+.banner-text h1 {
+  font-size: 2em;
+  color: aliceblue;
+  margin-bottom: 0.5em;
+}
+
+.banner-text span {
+  margin-top: -0.6em;
+  color: rgb(234, 158, 16);
+}
+
+.banner-text p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.about-accentaura {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.about-accentaura .about-accentaura-heading h1 {
+  color: rgba(18, 35, 164, 0.99);
+  margin-bottom: 0.5em;
+}
+
+.about-accentaura .about-accentaura-para {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-accentaura .about-accentaura-heading .span {
+  color: rgb(234, 158, 16);
+  display: inline;
+}
+
+.mission-and-vision {
+  display: flex;
+  margin-top: 2em;
+  margin-left: 10em;
+  margin-right: 10em;
+  /* padding-bottom: 2em; */
+  margin-bottom: -1.5rem;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+  gap: 2em; 
+}
+
+.mission-and-vision .mission-and-vision-text {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 6.5em;
+}
+
+.mission-and-vision .mission-and-vision-text h1 {
+  color: rgba(18, 35, 164, 0.99);
+}
+
+.mission-and-vision .mission-and-vision-heading .span {
+  color: rgb(234, 158, 16);
+  display: inline;
+}
+
+.mission-and-vision .mission-and-vision-image .imageClass {
+  width: 90%;
+  height: auto;
+}
+
+.mission-vision-ul{
+  margin-top: 1.5em;
+  list-style: disc;
+}
+.mission-vision-ul > li
+{
+  list-style: disc;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .mission-and-vision {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .banner-container {
+    margin-top: 2rem;
+    
+  }
+  .banner-image {
+    width: 100%;
+    height: 30vh;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+  .banner-text {
+    margin-top: 3rem;
+    padding: 1em;
+  }
+
+  .banner-text .banner-text1 {
+    width: 100%;
+    padding: 1em;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5em;
+    padding: 0.5em 0;
+  }
+
+  .banner-text p {
+    margin:0;
+    font-size: 1em !important;
+  }
+
+  .h1-about{
+    font-size: 1.5em;
+  }
+
+  .p-about{
+    text-align: center;
+    font-size: smaller;
+    font-weight: 700;
+  }
+
+  .about-accentaura .about-accentaura-para {
+    padding: 0 1em;
+  }
+
+  .mission-and-vision {
+    flex-direction: column;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .mission-vision-ul{
+    font-size: smaller;
+    font-weight: 700;
+  }
+
+  .mission-and-vision .mission-and-vision-image .imageClass {
+    width: 100%;
+  }
+  .founder-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text h1 {
+    font-size: 1.2em;
+  }
+
+  .banner-text p {
+    font-size: 0.8em;
+  }
+
+  .mission-and-vision {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .mission-and-vision .mission-and-vision-image .imageClass {
+    width: 100%;
+  }
+  .founder-title {
+    font-size: 1.5em;
+  }
+
+  .founder-info h3 {
+    font-size: 1em;
+  }
+
+  .founder-info p {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,20 @@
+.course-inner-outcome-section{
+    width: 90%;
+}
+.course-inner-outcome-content{
+    width: 100%;
+}
+.course-inner-outcome-container{
+    width: 100%;
+}
+.course-inner-outcome-container > h2
+{
+    color:#0961A2;
+}
+.course-inner-outcome-container > ul{
+    margin-left: 1em;
+    list-style: disc;
+}
+.course-inner-outcome-container > ul > li{
+    list-style: disc;
+}

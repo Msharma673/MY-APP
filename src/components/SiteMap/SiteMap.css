@@ -1,0 +1,82 @@
+/* General Page Styling */
+.sitemap-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #062784, #E89F3E);
+    color: white;
+    padding: 20px;
+  }
+  
+  .sitemap-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sitemap-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sitemap-header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Grid Layout */
+  .sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Card Styling */
+  .sitemap-card {
+    background-color: white;
+    color: #062784;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sitemap-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sitemap-card .icon {
+    font-size: 2.5rem;
+    color: #E89F3E;
+    margin-bottom: 10px;
+  }
+  
+  .sitemap-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .sitemap-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Link Styling */
+  .sitemap-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Footer Styling */
+  .sitemap-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  

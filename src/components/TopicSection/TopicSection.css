@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 1em;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+  }
+  
+  
+  

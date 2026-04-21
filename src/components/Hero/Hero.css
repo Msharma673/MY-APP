@@ -1,0 +1,309 @@
+.hero-section {
+  background: #0b68af;
+  color: white;
+  clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.hero-section > .container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0rem 0rem 0rem;
+}
+
+.hero-content {
+  
+  position: relative;
+  text-align: center;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.hero-content .h1 {
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+.hero-content > .section-title {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.hero-content > h1 > span {
+  color: #f39c12;
+  display: inline;
+}
+
+.hero-content > p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.2em;
+  font-weight: 500;
+ 
+}
+
+.know-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-form {
+  background-color: white;
+  margin-top: 20px;
+  width: 35%;
+  /* margin-right: 120px; */
+  color: black;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  height: 80%;
+  display: none;
+}
+.hero-form h2 {
+  margin-bottom: 1.5rem;
+  color: #0b68af;
+}
+
+.hero-form > form {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.hero-form input {
+  margin-bottom: 2.5rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.hero-form > label {
+  margin-bottom: 1rem;
+}
+.hero-form button {
+  padding: 0.75rem;
+  background-color: #0b68af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.hero-form button:hover {
+  background-color: #094a8a;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 575px) {
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /**
+   * HERO
+   */
+
+ 
+}
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 4.6rem;
+    --fs-2: 3.8rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero-section {
+    /* padding-block-start: calc(var(--section-padding) + 90px); */
+  }
+
+  .hero-section .container {
+    gap: 50px;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  .hero-content > .section-title {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .hero-form {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  html {
+    /**
+     * typography
+     */
+
+    --fs-1: 5.5rem;
+    --fs-2: 4.5rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  :is(.course, .blog) .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero-section .container {
+
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  .hero-content > .section-title {
+    text-align: left;
+    font-size: 2.2em;
+  }
+
+  .hero-form {
+    display: block;
+  }
+}
+
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-1: 6.5rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 120px;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 1185px;
+  }
+
+  .shape {
+    display: block;
+  }
+
+  .about-content,
+  .video-card,
+  .blog {
+    position: relative;
+  }
+
+ 
+  /**
+   * HERO
+   */
+
+  .hero-section {
+    
+  }
+
+  .hero-section .container {
+    gap: 80px;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  .hero-content > .section-title {
+    text-align: left;
+    font-size: 2.2em;
+  }
+
+  .hero-form {
+    display: block;
+  }
+  
+  
+}

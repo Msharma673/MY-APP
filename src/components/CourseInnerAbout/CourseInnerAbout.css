@@ -1,0 +1,19 @@
+.course-inner-about-section{
+    width: 90%;
+}
+.course-inner-about-content{
+    width: 100%;
+}
+.course-inner-about-course-container{
+    width: 100%;
+}
+.course-inner-about-course-container > h2
+{
+    color:#0961A2;
+}
+.course-inner-why-course-container{
+    margin-top: 2em;
+}
+.course-inner-why-course-container > h2{
+    color:#0961A2;
+}
