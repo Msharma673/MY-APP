@@ -1,4 +1,4 @@
-# my-app
+# MY-APP
 
 Short description
 This is the main web application for AccentAura2.0. It provides the core user-facing interface and common utilities used across the project.
